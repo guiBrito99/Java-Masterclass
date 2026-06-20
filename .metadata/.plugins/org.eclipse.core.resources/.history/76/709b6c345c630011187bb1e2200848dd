@@ -1,0 +1,35 @@
+package ab.challenges;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class GroceryList {
+	private ArrayList<String> list = new ArrayList<>();
+	
+	public void addItems() {
+		String[] items = null;
+		
+		do {
+			System.out.println("Type in the items to add separated by comma:");
+			items = Main.scanner.nextLine().split(",");
+			
+			System.out.println("Selected items:\n" + Arrays.toString(items));
+			
+			System.out.println("Confirm y/n");
+		}while(Main.scanner.nextLine().charAt(0) != 'y');
+	}
+	
+	public void deleteItems() {
+		String[] items = null;
+		
+		do {
+			System.out.println("Type in the items to add separated by comma:");
+			items = Main.scanner.nextLine().split(",");
+			
+			System.out.println("Selected items:\n" + Arrays.toString(items));
+			
+			System.out.println("Confirm y/n");
+		}while(Main.scanner.nextLine().charAt(0) != 'y');
+	}
+}
+

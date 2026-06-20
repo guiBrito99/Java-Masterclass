@@ -1,0 +1,18 @@
+package ab.challenges;
+
+import java.util.ArrayList;
+
+public class GroceryList {
+	private ArrayList<String> list = new ArrayList<>();
+	
+	public void addItem() {
+		String item = null;
+		
+		do {
+			System.out.println("Type in item to add:");
+			item = Main.scanner.nextLine();
+			
+			System.out.println("Confirm y/n");
+		}while(Main.scanner.nextLine().charAt(0) != 'y');
+	}
+}

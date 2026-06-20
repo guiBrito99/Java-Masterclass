@@ -1,0 +1,8 @@
+package ab.challenges;
+
+import java.util.ArrayList;
+
+public class GroceryList {
+	private ArrayList<String> list = new ArrayList<>();
+	
+}
